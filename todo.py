@@ -1,7 +1,7 @@
 import tkinter as tk
 
 class ToDoApp:
-    def _init_(self, root):
+    def __init__(self, root):
         self.root = root
         self.root.title("To-Do List")
 
@@ -19,8 +19,6 @@ class ToDoApp:
 
         self.delete_button = tk.Button(self.root, text="Delete Task", command=self.delete_task)
         self.delete_button.pack()
-
-        # Add more widgets and functionalities
 
     def add_task(self):
         task_description = self.task_entry.get()
@@ -43,5 +41,5 @@ def main():
     app = ToDoApp(root)
     root.mainloop()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
