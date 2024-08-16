@@ -32,5 +32,5 @@ def main():
     while input("Do you want to play again? (yes/no): ").lower() == 'yes':
         play_game()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
